@@ -1,6 +1,5 @@
-const mysql = require('mysql');
-
-const conexion = mysql.createPool({
+import {createPool} from 'mysql2/promise';
+export const pool = createPool({
   connectionLimit: 100,
   host: "localhost",
   user: "root",
@@ -8,5 +7,3 @@ const conexion = mysql.createPool({
   database : 'productos',
   debug: false
 });
-
-module.exports = conexion;

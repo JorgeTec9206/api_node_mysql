@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "API Ejemplo",
   "main": "index.js",
-  "autor": "Ricardo Tec",
+  "type": "module",
+  "autor": "Jorge Tec",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node src/index.js"
   },
   "keywords": [],
   "license": "ISC",
@@ -14,6 +15,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.3",
     "express-myconnection": "^1.0.4",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "mysql2": "^3.6.2"
   }
 }
